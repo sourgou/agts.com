@@ -1,0 +1,348 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003399;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #EF9B0F;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-button {
+    background-color: white;
+    color:#EF9B0F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-img {
+    height: 50px; /* Ajuste la taille selon tes besoins */
+    width: auto; /* Maintient le ratio de l'image */
+}
+.contact-info p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Départ transparent */
+        transform: translateY(20px); /* Déplacement vers le bas */
+    }
+    to {
+        opacity: 1; /* Fin opaque */
+        transform: translateY(0); /* Position d'origine */
+    }
+}
+
+section {
+    animation: fadeIn 0.6s ease forwards; /* Application de l'animation */
+}
+
+/* Pour chaque section, tu peux appliquer l'animation */
+#services {
+    animation-delay: 0.2s; /* Délai pour l'apparition */
+}
+
+#contact {
+    animation-delay: 0.4s; /* Délai pour l'apparition */
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espace entre les éléments */
+    padding: 20px; /* Espacement autour de la section */
+}
+
+.service-item {
+    background-color: #f0f0f0; /* Couleur de fond des éléments */
+    padding: 15px;
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    width: 150px; /* Largeur fixe pour les éléments */
+    text-align: center; /* Centrer le texte */
+    animation: fadeIn 0.5s ease forwards; /* Application de l'animation */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Départ transparent */
+        transform: translateY(20px); /* Déplacement vers le bas */
+    }
+    to {
+        opacity: 1; /* Fin opaque */
+        transform: translateY(0); /* Position d'origine */
+    }
+}
+
+/* Animation avec délai pour chaque élément */
+.service-item:nth-child(1) { animation-delay: 0.1s; }
+.service-item:nth-child(2) { animation-delay: 0.2s; }
+.service-item:nth-child(3) { animation-delay: 0.3s; }
+.service-item:nth-child(4) { animation-delay: 0.4s; }
+.service-item:nth-child(5) { animation-delay: 0.5s; }
+.service-item:nth-child(6) { animation-delay: 0.6s; }
+.service-item:nth-child(7) { animation-delay: 0.7s; }
+.service-item:nth-child(8) { animation-delay: 0.8s; }
+.service-item:nth-child(9) { animation-delay: 0.9s; }
+.service-item:nth-child(10) { animation-delay: 1s; }
+
+#about {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Couleur de fond */
+    text-align: center; /* Centrer le texte */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Disposition en colonne pour les petits écrans */
+    align-items: center; /* Centre le contenu */
+    gap: 20px; /* Espace entre le texte et l'image */
+    animation: slideIn 0.8s ease forwards; /* Animation d'apparition */
+}
+
+/* Animation de défilement */
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Départ transparent */
+        transform: translateY(20px); /* Déplacement vers le bas */
+    }
+    to {
+        opacity: 1; /* Fin opaque */
+        transform: translateY(0); /* Position d'origine */
+    }
+}
+
+.about-text {
+    animation: fadeIn 0.6s ease forwards; /* Animation pour le texte */
+}
+
+.about-image {
+    animation: zoomIn 0.6s ease forwards; /* Animation pour l'image */
+}
+
+/* Animation de zoom */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9); /* Départ légèrement réduit */
+        opacity: 0; /* Départ transparent */
+    }
+    to {
+        transform: scale(1); /* Taille normale */
+        opacity: 1; /* Fin opaque */
+    }
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row; /* Disposition en ligne pour les grands écrans */
+    }
+
+    .about-text, .about-image {
+        flex: 1; /* Équilibre la largeur des colonnes */
+    }
+
+    .about-image img {
+        max-width: 40%; /* Assure que l'image est responsive */
+        height: auto; /* Garde les proportions */
+    }
+}
+#contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Couleur de fond */
+    text-align: center; /* Centrer le texte */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333; /* Couleur du titre */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    gap: 15px; /* Espace entre les éléments du formulaire */
+    animation: fadeIn 0.8s ease forwards; /* Animation d'apparition */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 5px; /* Coins arrondis */
+    transition: border-color 0.3s ease; /* Transition pour la bordure */
+}
+
+input:focus, textarea:focus {
+    border-color: #EF9B0F; /* Changement de couleur au focus */
+    outline: none; /* Supprimer l'outline par défaut */
+}
+
+button {
+    background-color:#EF9B0F; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition */
+}
+
+button:hover {
+    background-color: #EF9B0F; /* Couleur de fond au survol */
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+.contact-info {
+    margin-top: 20px;
+    animation: slideIn 0.8s ease forwards; /* Animation pour les informations de contact */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Départ transparent */
+        transform: translateY(20px); /* Déplacement vers le bas */
+    }
+    to {
+        opacity: 1; /* Fin opaque */
+        transform: translateY(0); /* Position d'origine */
+    }
+}
+
+/* Animation de défilement */
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Départ transparent */
+        transform: translateY(20px); /* Déplacement vers le bas */
+    }
+    to {
+        opacity: 1; /* Fin opaque */
+        transform: translateY(0); /* Position d'origine */
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Espacement entre logo et navigation */
+    align-items: center; /* Centrer verticalement */
+    padding: 10px 20px; /* Espacement intérieur */
+    background-color: #003399; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    position: relative; /* Pour les animations */
+    animation: slideDown 0s ease forwards; /* Animation d'apparition */
+}
+
+/* Animation de défilement */
+@keyframes slideDown {
+    from {
+        opacity: 0; /* Départ transparent */
+        transform: translateY(-20px); /* Déplacement vers le haut */
+    }
+    to {
+        opacity: 1; /* Fin opaque */
+        transform: translateY(0); /* Position d'origine */
+    }
+}
+
+.logo {
+    display: flex; /* Disposition en ligne pour le logo et le texte */
+    align-items: center; /* Centrer verticalement */
+    animation: logoBounce 0.5s ease forwards; /* Animation pour le logo */
+}
+
+.logo img {
+    width: 200px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique */
+    margin-right: 10px; /* Espace entre le logo et le texte */
+    animation: spin 2s linear infinite; /* Animation de rotation */
+}
+
+/* Animation de rotation du logo */
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Départ sans rotation */
+    }
+    to {
+        transform: rotate(0deg); /* Rotation complète */
+    }
+}
+
+@keyframes logoBounce {
+    0% {
+        transform: translateY(0); /* Position d'origine */
+    }
+    50% {
+        transform: translateY(-10px); /* Déplacement vers le haut */
+    }
+    100% {
+        transform: translateY(0); /* Retour à la position d'origine */
+    }
+}
+
+nav ul {
+    list-style: none; /* Supprimer les puces */
+    display: flex; /* Disposition en ligne */
+    gap: 20px; /* Espace entre les éléments */
+}
+
+nav a {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement */
+    padding: 10px 15px; /* Espacement autour du texte */
+    border-radius: 10px; /* Coins arrondis */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond au survol */
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+
